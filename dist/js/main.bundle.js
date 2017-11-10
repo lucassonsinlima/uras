@@ -67,12 +67,9 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+__webpack_require__(1);
+module.exports = __webpack_require__(2);
 
-
-var xurelb = __webpack_require__(1);
-
-xurelb.init();
 
 /***/ }),
 /* 1 */
@@ -81,15 +78,12 @@ xurelb.init();
 "use strict";
 
 
-module.exports = {
-  init: function init() {
-    this.test();
-  },
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
 
-  test: function test() {
-    console.log("lalala");
-  }
-};
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
+//# sourceMappingURL=main.bundle.js.map

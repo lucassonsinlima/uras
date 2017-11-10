@@ -1,1 +1,0 @@
-var xurelb=require("../modules/test.js");xurelb.init();
