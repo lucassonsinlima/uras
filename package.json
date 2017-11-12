@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "compass-loader": "0.0.4",
+    "compass-mixins": "^0.12.10",
     "gsap": "^1.19.1",
     "jquery": "^3.2.1",
     "normalize-css": "^2.3.1"
@@ -23,6 +25,7 @@
     "browser-sync-webpack-plugin": "^1.1.4",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.0",
+    "grunt": "^1.0.1",
     "node-sass": "^3.13.0",
     "postcss-loader": "^1.1.1",
     "sass-loader": "^4.0.2",

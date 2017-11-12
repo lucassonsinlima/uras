@@ -6,7 +6,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
 
-    entry: ['./src/js/global.js', './src/scss/main.scss'],
+    entry: ['./src/js/main.js', './src/scss/main.scss'],
 
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -25,7 +25,7 @@ module.exports = {
                   }
               }
           },
-          { 
+          {
             test: /\.css$/,
             exclude: /(node_modules|bower_components)/,
             use: ExtractTextPlugin.extract({
@@ -35,7 +35,7 @@ module.exports = {
           {
             test: /\.(sass|scss)$/,
             exclude: /(node_modules|bower_components)/,
-            use: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
+            use: ExtractTextPlugin.extract(['css-loader', 'sass-loader?outputStyle=expanded&includePaths[]=' + path.resolve(__dirname, './node_modules/compass-mixins/lib')])
           }
       ]
     },
@@ -47,6 +47,10 @@ module.exports = {
             server: { baseDir: ['dist'] },
             files: ['./dist/*']
         }),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        })
     ],
     watch: true,
     devtool: 'source-map'

@@ -1,0 +1,59 @@
+@import "compass";
+
+
+.b-navbar__info {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  z-index: 100;
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+  .b-navbar__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include transform(translate(-50%, -50%));
+  }
+  .b-navbar__text {
+    margin: auto;
+    color: $text--navbar;
+    font-size: 14px;
+    text-transform: uppercase;
+    flex: 1;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 15px;
+  }
+  &.is--horizontal{
+    width: 100%;
+    height: 70px;
+  }
+  &.is--vertical {
+    width: 70px;
+    height: 100%;
+  }
+  &.m-navbar {
+    &--projects {
+      top: 0;
+    }
+    &--contact {
+      right: 0;
+      .b-navbar__content {
+        @include transform(translate(-50%, -50%) rotate(-90deg));
+      }
+    }
+    &--home {
+      left: 0;
+      .b-navbar__content {
+        @include transform(translate(-50%, -50%) rotate(90deg));
+      }
+    }
+    &--about {
+      bottom: 0;
+    }
+  }
+}
