@@ -261,11 +261,4 @@ body {
   bottom: 0;
 }
 
-:root {
-  --f-size: 15;
-  --f-unit: 1vmin;
-  --f: calc(var(--f-size) * var(--f-unit));
-  --bg: #181717;
-}
-
 /*# sourceMappingURL=main.bundle.css.map*/
