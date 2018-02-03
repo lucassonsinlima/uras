@@ -1,18 +1,20 @@
+//Mixins
+@import "mixins/transform";
+@import "mixins/transition";
+@import "mixins/breakpoints";
+
+//Keyframes
+@import "keyframes/glitch";
 
 //Base
 @import "base/reset";
 @import "base/variables";
 @import "base/global";
+@import "base/text";
+@import "base/helpers";
 
 //Fonts
 @import "font/fonts";
-
-//Mixins
-@import "mixins/transform";
-@import "mixins/transition";
-
-//Keyframes
-@import "keyframes/glitch";
 
 //States
 @import "states/modifiers";

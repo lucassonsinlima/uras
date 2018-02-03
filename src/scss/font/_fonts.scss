@@ -1,1 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+@font-face {
+  font-family: 'Univers';
+  src: url('#{$font-path-univers}/Univers.eot');
+  src: url('#{$font-path-univers}/Univers.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path-univers}/Univers.woff2') format('woff2'),
+  url('#{$font-path-univers}/Univers.woff') format('woff'),
+  url('#{$font-path-univers}/Univers.svg#Univers') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url('#{$font-path-univers}/Univers-BlackExtObl.eot');
+  src: url('#{$font-path-univers}/Univers-BlackExtObl.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path-univers}/Univers-BlackExtObl.woff2') format('woff2'),
+  url('#{$font-path-univers}/Univers-BlackExtObl.woff') format('woff'),
+  url('#{$font-path-univers}/Univers-BlackExtObl.svg#Univers-BlackExtObl') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Univers';
+	src: url('#{$font-path-univers}/Univers-CondensedLight.eot');
+	src: url('#{$font-path-univers}/Univers-CondensedLight.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path-univers}/Univers-CondensedLight.woff2') format('woff2'),
+		url('#{$font-path-univers}/Univers-CondensedLight.woff') format('woff'),
+		url('#{$font-path-univers}/Univers-CondensedLight.svg#/Univers-CondensedLight') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Univers';
+	src: url('#{$font-path-univers}/Univers-CondensedOblique.eot');
+	src: url('#{$font-path-univers}/Univers-CondensedOblique.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path-univers}/Univers-CondensedOblique.woff2') format('woff2'),
+		url('#{$font-path-univers}/Univers-CondensedOblique.woff') format('woff'),
+		url('#{$font-path-univers}/Univers-CondensedOblique.svg#/Univers-CondensedLight') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}

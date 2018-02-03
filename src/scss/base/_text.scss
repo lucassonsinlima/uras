@@ -1,0 +1,15 @@
+.text {
+  text-transform: lowercase;
+  font-family: $fontMain;
+  font-style: italic;
+  font-weight: 900;
+  &--orange {
+    color: $orange;
+    @include breakpoint(desktop){
+      font-size: 30vh;
+    }
+  }
+  &--red {
+    color: $red;
+  }
+}

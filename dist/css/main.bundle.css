@@ -1,64 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-body,
-html {
-  width: 100%;
-  height: 100%;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after {
-  content: '';
-  content: none;
-}
-
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-html {
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-  background: #000;
-  overflow: hidden;
-  position: relative;
-}
-
 @keyframes glitch-p {
   17% {
     --scale: .87;
@@ -144,6 +83,130 @@ body {
   }
 }
 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: "Univers", sans-serif;
+}
+
+body {
+  background: #fff;
+  position: relative;
+}
+
+.text {
+  text-transform: lowercase;
+  font-family: "Univers", sans-serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.text--orange {
+  color: #ff7441;
+}
+
+@media (min-width: 921px) {
+  .text--orange {
+    font-size: 30vh;
+  }
+}
+
+.text--red {
+  color: #ff0000;
+}
+
+.vertical--centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url("/dist/fonts/univers/Univers.eot");
+  src: url("/dist/fonts/univers/Univers.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/univers/Univers.woff2") format("woff2"), url("/dist/fonts/univers/Univers.woff") format("woff"), url("/dist/fonts/univers/Univers.svg#Univers") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url("/dist/fonts/univers/Univers-BlackExtObl.eot");
+  src: url("/dist/fonts/univers/Univers-BlackExtObl.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/univers/Univers-BlackExtObl.woff2") format("woff2"), url("/dist/fonts/univers/Univers-BlackExtObl.woff") format("woff"), url("/dist/fonts/univers/Univers-BlackExtObl.svg#Univers-BlackExtObl") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url("/dist/fonts/univers/Univers-CondensedLight.eot");
+  src: url("/dist/fonts/univers/Univers-CondensedLight.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/univers/Univers-CondensedLight.woff2") format("woff2"), url("/dist/fonts/univers/Univers-CondensedLight.woff") format("woff"), url("/dist/fonts/univers/Univers-CondensedLight.svg#/Univers-CondensedLight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url("/dist/fonts/univers/Univers-CondensedOblique.eot");
+  src: url("/dist/fonts/univers/Univers-CondensedOblique.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/univers/Univers-CondensedOblique.woff2") format("woff2"), url("/dist/fonts/univers/Univers-CondensedOblique.woff") format("woff"), url("/dist/fonts/univers/Univers-CondensedOblique.svg#/Univers-CondensedLight") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
 :root {
   --f-size: 15;
   --f-unit: 1vmin;
@@ -183,82 +246,28 @@ body {
   animation: glitch-a 3.1s infinite alternate;
 }
 
-.b-navbar__info {
-  position: absolute;
-  display: block;
-  cursor: pointer;
-  z-index: 100;
-}
-
-.b-navbar__info a {
+.m-section--full {
+  height: 100vh;
   width: 100%;
-  height: 100%;
-  display: block;
   position: relative;
 }
 
-.b-navbar__info .b-navbar__content {
+.l-section__menu--nav {
   position: absolute;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
-.b-navbar__info .b-navbar__text {
-  margin: auto;
-  color: #fff;
-  font-size: 14px;
-  text-transform: uppercase;
-  flex: 1;
-  text-align: center;
-  font-weight: 900;
-  letter-spacing: 15px;
+.b-section__menu--about {
+  top: 40px;
 }
 
-.b-navbar__info.is--horizontal {
-  width: 100%;
-  height: 70px;
-}
-
-.b-navbar__info.is--vertical {
-  width: 70px;
-  height: 100%;
-}
-
-.b-navbar__info.m-navbar--projects {
-  top: 0;
-}
-
-.b-navbar__info.m-navbar--contact {
-  right: 0;
-}
-
-.b-navbar__info.m-navbar--contact .b-navbar__content {
-  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
-  -moz-transform: translate(-50%, -50%) rotate(-90deg);
-  -ms-transform: translate(-50%, -50%) rotate(-90deg);
-  -o-transform: translate(-50%, -50%) rotate(-90deg);
-  transform: translate(-50%, -50%) rotate(-90deg);
-}
-
-.b-navbar__info.m-navbar--home {
-  left: 0;
-}
-
-.b-navbar__info.m-navbar--home .b-navbar__content {
-  -webkit-transform: translate(-50%, -50%) rotate(90deg);
-  -moz-transform: translate(-50%, -50%) rotate(90deg);
-  -ms-transform: translate(-50%, -50%) rotate(90deg);
-  -o-transform: translate(-50%, -50%) rotate(90deg);
-  transform: translate(-50%, -50%) rotate(90deg);
-}
-
-.b-navbar__info.m-navbar--about {
-  bottom: 0;
+.b-section__menu--works {
+  bottom: 40px;
 }
 
 /*# sourceMappingURL=main.bundle.css.map*/

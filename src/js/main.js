@@ -1,5 +1,5 @@
-console.log("xoxo");
+console.log("xoxoxoxoxolalalala");
 
 const lala = require('./test/test');
 
-lala.init()
+lala.init();

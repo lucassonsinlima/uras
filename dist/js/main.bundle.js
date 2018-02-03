@@ -78,7 +78,7 @@ module.exports = __webpack_require__(3);
 "use strict";
 
 
-console.log("xoxo");
+console.log("xoxoxoxoxolalalala");
 
 var lala = __webpack_require__(2);
 

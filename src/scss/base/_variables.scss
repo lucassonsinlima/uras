@@ -1,12 +1,17 @@
-//Fonts
-$fontMain: "Roboto", sans-serif;
 
+$font-path: "/dist/fonts/";
+$font-path-univers: "/dist/fonts/univers";
+//Fonts
+$fontMain: "Univers", sans-serif;
 
 //Colors
-
+$orange: #ff7441;
+$red: #ff0000;
+$blue: #0000ff;
+$gray: #454545;
+$gray-light: #bebebe;
 
 //Text
 $text--navbar : #fff;
-
 
 //Glitch Effect
