@@ -183,6 +183,8 @@ body {
 }
 
 .text--gray {
+  font-size: 12px;
+  letter-spacing: 4px;
   color: #454545;
 }
 
@@ -331,6 +333,38 @@ body {
 
 .c-tech__infos--title span {
   display: block;
+}
+
+.c-tech__infos .c-tech__box {
+  width: 775px;
+  margin-top: 50px;
+  padding: 0;
+  border: 1px solid #454545;
+}
+
+.c-tech__infos .c-tech__box--item {
+  padding: 25px 30px;
+  vertical-align: middle;
+}
+
+.c-tech__infos .c-tech__box tr {
+  border-bottom: 1px solid #454545;
+}
+
+.c-tech__infos .c-tech__box--title {
+  border-right: 1px solid #454545;
+}
+
+.c-tech__infos .c-tech__box--info span {
+  display: inline-block;
+  background: #ff7441;
+  padding: 7px;
+  color: #fff;
+  margin: 3px;
+}
+
+.c-tech__infos .c-tech__box .not--bordered {
+  border-bottom: 0;
 }
 
 .m-section--full {

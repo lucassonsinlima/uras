@@ -4,4 +4,32 @@
       display: block;
     }
   }
+  .c-tech__box {
+    width: 775px;
+    margin-top: 50px;
+    padding: 0;
+    border: 1px solid $gray;
+    &--item {
+      padding: 25px 30px;
+      vertical-align: middle;
+    }
+    tr {
+      border-bottom: 1px solid $gray;
+    }
+    &--title {
+      border-right: 1px solid $gray;
+    }
+    &--info {
+      span {
+        display: inline-block;
+        background: $orange;
+        padding: 7px;
+        color: #fff;
+        margin: 3px;
+      }
+    }
+    .not--bordered {
+      border-bottom: 0;
+    }
+  }
 }
