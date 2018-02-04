@@ -1,15 +1,59 @@
 .text {
   text-transform: lowercase;
   font-family: $fontMain;
-  font-style: italic;
-  font-weight: 900;
   &--orange {
+    font-style: italic;
+    font-weight: 900;
     color: $orange;
     @include breakpoint(desktop){
       font-size: 30vh;
     }
   }
   &--red {
+    font-style: italic;
+    font-weight: 900;
     color: $red;
+    @include transition(.2s ease-in-out);
+    &:hover {
+      color: darken($red, 20%);
+    }
+  }
+  &--graylight {
+    color: $gray-light;
+    line-height: 25px;
+  }
+  &__lighter {
+    font-size: 12px;
+    letter-spacing: 6px;
+    &--orange {
+      color: $orange;
+      @include transition(.2s ease-in-out);
+      &:hover {
+        color: darken($orange, 20%);
+      }
+    }
+  }
+
+  //Modif
+  &--underlined {
+    text-decoration: underline;
+  }
+  &--bordered {
+    &:hover {
+      &:after {
+        width: calc(50% - 5px);
+      }
+    }
+    &:after {
+      content: "";
+      background: $orange;
+      width: 0%;
+      height: 6px;
+      position: absolute;
+      display: block;
+      margin-top: 5px;
+      right: 5px;
+      @include transition(.1s ease-in-out);
+    }
   }
 }

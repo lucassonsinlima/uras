@@ -14,21 +14,80 @@
   &__menu {
     &--container {
     }
-    &--nav {
-      position: absolute;
-      left: 50%;
-      @include transform(translateX(-50%));
-    }
   }
 }
 
 .b-section {
   &__menu {
+    &--nav {
+      position: absolute;
+      left: 50%;
+      @include transform(translateX(-50%));
+    }
     &--about {
       top: 40px;
     }
     &--works {
       bottom: 40px;
+    }
+  }
+
+  &__central {
+    &--nav {
+      position: absolute;
+      top: 40px;
+    }
+    &--center {
+      left: 50%;
+      @include transform(translateX(-50%));
+    }
+    &--left {
+      left: 40px;
+    }
+    &--right {
+      right: 40px;
+    }
+    &--content {
+      position: absolute;
+      top: 65%;
+      left: 40px;
+      right: 40px;
+      @include transform(translateY(-65%));
+    }
+    &--wrap {
+      display: flex;
+    }
+    &--left {
+      img {
+        display: block;
+      }
+      span {
+        display: block;
+        line-height: 20px;
+      }
+      .text--red {
+        font-size: 14px;
+      }
+      .text__lighter--orange {
+        font-size: 12px;
+      }
+    }
+    &--contact {
+      padding-top: 20px;
+    }
+    &--right {
+      padding: 0 80px;
+      .text--orange {
+        font-size: 20vh;
+      }
+    }
+    &--title {
+      padding-bottom: 30px;
+    }
+    &--more {
+      float: left;
+      width: 100%;
+      padding-top: 40px;
     }
   }
 }
