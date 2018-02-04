@@ -18,11 +18,21 @@
       color: darken($red, 20%);
     }
   }
+  &--blue {
+    color: $blue;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 10vh;
+  }
+  &--gray {
+    color: $gray;
+  }
   &--graylight {
     color: $gray-light;
     line-height: 25px;
   }
   &__lighter {
+    position: relative;
     font-size: 12px;
     letter-spacing: 6px;
     &--orange {

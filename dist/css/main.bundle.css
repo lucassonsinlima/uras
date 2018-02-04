@@ -175,12 +175,24 @@ body {
   color: #990000;
 }
 
+.text--blue {
+  color: #0000ff;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 10vh;
+}
+
+.text--gray {
+  color: #454545;
+}
+
 .text--graylight {
   color: #bebebe;
   line-height: 25px;
 }
 
 .text__lighter {
+  position: relative;
   font-size: 12px;
   letter-spacing: 6px;
 }
@@ -231,6 +243,11 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.go--back:before {
+  content: "<";
+  padding: 5px;
 }
 
 @font-face {
@@ -310,6 +327,10 @@ body {
 
 .pull--right {
   float: right;
+}
+
+.c-tech__infos--title span {
+  display: block;
 }
 
 .m-section--full {
