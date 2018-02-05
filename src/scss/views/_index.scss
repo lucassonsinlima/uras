@@ -114,6 +114,7 @@
           &.is--active {
             color: $blue;
             font-weight: 700;
+            font-style: italic;
             &:after {
               content: "";
               width: 50%;

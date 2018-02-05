@@ -504,6 +504,7 @@ body {
 .b-section__works--sidenav .c-sidenav--item span.is--active {
   color: #0000ff;
   font-weight: 700;
+  font-style: italic;
 }
 
 .b-section__works--sidenav .c-sidenav--item span.is--active:after {
