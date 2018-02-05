@@ -78,24 +78,15 @@ module.exports = __webpack_require__(3);
 "use strict";
 
 
-console.log("xoxoxoxoxolalalala");
-
 var lala = __webpack_require__(2);
 
 lala.init();
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-module.exports = {
-  init: function init() {
-    console.log("lalala");
-  }
-};
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\web\\uras\\src\\js\\test\\test.js'");
 
 /***/ }),
 /* 3 */
