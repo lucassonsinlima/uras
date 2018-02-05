@@ -1,3 +1,3 @@
-const lala = require('./test/test');
+// const lala = require('./test/test');
 
-lala.init();
+// lala.init();

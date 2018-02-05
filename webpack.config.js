@@ -35,8 +35,23 @@ module.exports = {
           {
             test: /\.(sass|scss)$/,
             exclude: /(node_modules|bower_components)/,
-            use: ExtractTextPlugin.extract(['css-loader', 'sass-loader?outputStyle=expanded&includePaths[]=' + path.resolve(__dirname, './node_modules/compass-mixins/lib')])
-          }
+						use: ExtractTextPlugin.extract(['css-loader','resolve-url-loader', 'sass-loader?outputStyle=expanded&includePaths[]=' + path.resolve(__dirname, './node_modules/compass-mixins/lib')])
+          },
+          {
+            test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+            use: 'url-loader?limit=10000&mimetype=application/font-woff'
+          },
+					{
+						test: /\.(eot|svg|ttf|woff|woff2)$/,
+						exclude: /node_modules/,
+						loader: 'file-loader'
+					},
+					{
+						test: /\.(eot|woff|woff2|ttf|svg)(\?[\s\S]+)?$/,
+						loader: 'url-loader?limit=1000&name=fonts/[name].[ext]',
+						exclude: /node_modules/,
+						include: [path.resolve(__dirname, '/dist/fonts')] // <== RIGHT HERE
+					}
       ]
     },
     plugins: [

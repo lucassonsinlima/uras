@@ -1,6 +1,6 @@
 
-$font-path: "/dist/fonts/";
-$font-path-univers: "/dist/fonts/univers";
+$font-path: "/dist/fonts/" !default;
+$font-path-univers: "/dist/fonts/univers" !default;
 //Fonts
 $fontMain: "Univers", sans-serif;
 
